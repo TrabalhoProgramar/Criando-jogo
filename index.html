@@ -1,0 +1,150 @@
+
+<head>  
+        <link rel="stylesheet" href="style.css">  
+    </head>  
+
+ <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grande Guerra</title>
+    <h1>A Grande Guerra</h1>
+</head>
+<body> 
+    
+    <div class="audio">        
+     <audio id="background-music" preload="metadata" controls autoplay loop>
+        <source src="exterminador.mp3" type="audio/mp3">
+     </audio>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var audio = document.getElementById('background-music');
+          audio.volume = 1.0;
+        });
+    </script>
+      
+
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario1.jpeg" alt="">
+            <p> No ano de 2150 com o avanço das tecnologias uma guerra se iniciava, uma luta entre humanos e maquinas, uma guerra que apenas um lado podera vencer. Então você terá uma escolha de qual lado ficara. </p>
+            <button class="btn-proximo" data-proximo="1">Humanos</button>
+            <button class="btn-proximo" data-proximo="2">Maquinas</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="cenario2.jpg" alt="">
+            <p>Você escolhe os humanos uma raça parcialmente fraca mas com uma inteligencia avançada e armas poderosas. Sua missão é entrar no Centro de Comandos das maquinas e plantar um virus para que as maquinas seja destruidas de uma vez por todas. Então você aceita a missão?</p>
+            <button class="btn-proximo" data-proximo="3">Claro, darei minha vida se for necessário.</button>
+            <button class="btn-proximo" data-proximo="4">Não, sou um covarde que irá morrer sem nenhuma dignidade.</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="cenario3.avif" alt="">
+            <p>Você escolhe as Maquinas uma inteligencia artificial que consegue hackear qualquer despositivo, também com varias capacidade sobre humanas. Sua missão é exterminar toda a raça humana da face da terra, onde terá que eliminar e destruir uma base militar que está locolizada numa montanha. Então você aceita a missão?</p>
+            <button class="btn-proximo" data-proximo="5">Dados absorvidos, a missão será executada</button>
+            <button class="btn-proximo" data-proximo="6">Dados negados.</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="cenario4.avif" alt="">
+            <p>Com o chamado do General Charles você e seu batalhão de soldados embarcam em uma aeronave rumo a capital das maquinas localizada na cidade de Washington. Quando a aeronave passa sobre a cidade o seu comandante manda todos os soldados saltarem do avião, com toda a adrenalina você percebe que está se destanciando da área de pouso, tendo duas opções de para aterrizar. Qual delas você escolhe? </p>
+            <button class="btn-proximo" data-proximo="7">Pousar no topo de um predio</button>
+            <button class="btn-proximo" data-proximo="8">Pousar no meio da avenida</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="cenario5.webp" alt="">
+            <p>Covarde maldito você é uma vergonha para o resto dos sobreviventes. FIM DE JOGO</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="cenario6.avif" alt="">
+            <p>Com os dados carregados em seu armazenamento a Maquina Mãe prepara um ataque onde você está no comando de um exercito de maquinas prontas para arrancar a pele humana de seus corpos. Mas antes de sairem do Centro de Comando, você tem duas opções para partirem para a guerra.</p>
+            <button class="btn-proximo" data-proximo="9">Marchar rumo a base dos sobreviventes pelo meio da estrada.</button>
+            <button class="btn-proximo" data-proximo="10">Marchar rumo a base pelo meio da floresta.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="cenario7.avif" alt="">
+            <p>A Maquina Mãe destruiu você pedaço por pedaço. FIM DE JOGO</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="cenario8.avif" alt="">
+            <p>Ao pousar no topo do predio você percebe que seu batalhão está sendo estraçalhado pelas maquinas, uma voz aparece em seu radio "Conclua a missão, você é nossa unica esperança...".</p>
+            <button class="btn-proximo" data-proximo="11">Tomar coragem e partir para a Central das maquinas.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="cenario9.jpg" alt="">
+            <p>Ao pousar na avenida você cai em frente uma maquina que na mesma hora arranca todos os seus membros do corpo e por fim coloca fogo no que sobrou de você. FIM DE JOGO</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+        
+        <div class="passo" id="passo-9">
+            <img src="cenario10.webp" alt="">
+            <p>Andando pela estrada com seu exercito você encontra um soldado humano ferido, então na mesma hora você começa a interrogar ele. Em meio ao pânico ele entrega a localização da base, com os dados coletados você explode ele com sua arma partindo para a batalha final.</p>
+            <button class="btn-proximo" data-proximo="12">Partir para a base.</button>
+        </div>
+          
+        <div class="passo" id="passo-10">
+            <img src="cenario11.avif" alt="">
+            <p>Em meio a floresta desconhecida, você e seu exercito sofrem uma emboscada, pisando em minas-terrestres colocadas pelos humanos destruindo todas as maquinas que estavão com você. FIM DE JOGO</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="cenario12.jpg" alt="">
+            <p>Tomado de coragem e ódio, determinado a acabar com todo o sofrimento causado pelas maquinas. Chegando proximo a Central você percebe um ferro velho de maquinas destruidas e também uma abertura que leva para dentro da Central. Ao mesmo tempo você tem duas ideias, qual será sua escolha?</p>
+            <button class="btn-proximo" data-proximo="13">Fazer uma armadura com as peças das maquinas e se infiltra desfarçado do maquina.</button>
+            <button class="btn-proximo" data-proximo="14">Entrar pela abertura e destruir tudo que está dentro sem nenhuma preocupação.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="cenario13.jpg" alt="">
+            <p>Chegando perto da base dos sobreviventes você escaneia o perimetro, capturando com sua visão termica a localização exata dos humanos. Você manda a confirmação da base para a Central e recebe um solicitação de ataque imediato aos sobreviventes. Você tem duas opções, ataque a noite ou ateque a luz do dia? </p>
+            <button class="btn-proximo" data-proximo="15">Ataque de noite.</button>
+            <button class="btn-proximo" data-proximo="16">Ataque de dia.</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <img src="cenario14.jpg" alt="">
+            <p>Você decide fazer um disfarce de maquina e com suas capacidades tecnologicas você burla a segurança passando despercebido. Adentrando pelos corredores da Central você localiza a sala de controles de todas as maquinas, entrando nela com cautela você localiza o dispositivo para implantar o virus. Finalmente você implanta o virus fazendo que todas as maquinas desligasse de uma vez por todas trazendo paz para os humanos, e ganhando reconhecimento de todos os viventes se tornado o Herói da Patria.   </p>
+            <button class="btn-proximo" data-proximo="0">Parabéns você lutou firmemente e conquistou a vitoria pelos humanos. Recomeçar.</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <img src="cenario15.avif" alt="">
+            <p>Com uma raiva sobrenatural você decide entrar com o objetivo unico de destruir tudo que está dentro da central, pegando todas as armas disponíveis você entra pela porta da frente explodindo toda a entrada chando atenção da Maquina Mãe. Com a central tocando o alarme de invasão todas as maquinas vão te encontro com você, com sua poderosa arma vai destruindo um por um. Em um ato de desespero a Maquina Mãe reúne todas as armas possíveis contra você, então você decide colocar um C4 no nucleo da Central fazendo que toda a Central, as maquinas e a Maquina Mãe fossem consumidos pela explosão, também causando sua morte, um sacrifício que deu esperança a todos. </p>
+            <button class="btn-proximo" data-proximo="0">Parabéns você lutou bravamente se sacrificando para um bem maior, conquistando a vitoria pelos humanos. Recomeçar.</button>
+        </div>
+
+
+        <div class="passo" id="passo-15">
+            <img src="cenario16.jpg" alt="">
+            <p>Esperando anoitecer, você e seu exercito fazem um ataque surpresa jogando misseis em todo a base, uma batalha se inicia com os humanos revidando mas já é tarde de mais os sobreviventes foram consumidos pelo fogo de seus lança-chamas. Ao amanhecer a base está completamente em pedaços um verdadeiro cenario de guerra, com esse ataque toda a raça humana foi eliminada da face da Terra, uma conquista para as maquinas que dominaram todo o mundo.  </p>
+            <button class="btn-proximo" data-proximo="0">Você venceu a guerra de forma brutal dominando o mundo.Recomeçar.</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <img src="cenario17.jpg" alt="">
+            <p>No mesmo instante você e seu exercito começa um ataque, ataque esse que já era esperado pelos sobreviventes então uma batalha se inicia tendo varias baixas em ambos os lados. Fogo, tiro, bombas e laser por toda a parte, até que há uma reviravolta com os humanos, desfavorecendo você e todo o seu exercito. Algumas horas depois seu exercito é completamente derrotado e você foi capturado amarrado em correntes de ferro e jogado em um poço de lava morrendo derretido. </p>
+            <button class="btn-proximo" data-proximo="0">Seus esforços não foram suficiente para destruir a raça humana.Recomeçar</button>
+        </div>
+
+        </main>
+        <script src="script.js"></script>
+        
+</body>
+</html>
